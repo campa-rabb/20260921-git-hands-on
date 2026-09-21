@@ -372,6 +372,27 @@ h2 {
   background: var(--ink);
   border-color: var(--ink);
 }
+.shop-sort {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+.shop-sort label {
+  font-size: 12px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.shop-sort select {
+  background: transparent;
+  border: 1px solid #cdd0c3;
+  border-radius: 30px;
+  min-height: 41px;
+  font-size: 13px;
+  padding: 7px 14px;
+  font-family: inherit;
+  color: inherit;
+}
 .result-count {
   font-size: 12px;
   color: var(--muted);
@@ -960,6 +981,9 @@ h2 {
     flex-wrap: wrap;
     margin: 20px 0;
     gap: 14px;
+  }
+  .shop-sort {
+    margin-left: 0;
   }
   .category-filters {
     gap: 8px;
