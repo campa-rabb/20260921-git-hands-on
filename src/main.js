@@ -43,7 +43,30 @@ document.querySelector('#reset-search').addEventListener('click', () => {
   searchInput.value = '';
   selectedCategory = 'all';
   filterShops();
+  sortSelect.value = 'default';
+  sortShops();
   searchInput.focus();
 });
 
 filterShops();
+
+// 店舗カードの並び替え。カードは index.html にあるものを移動させるだけです。
+const shopList = document.querySelector('#shop-list');
+const sortSelect = document.querySelector('#shop-sort');
+
+function sortShops() {
+  const order = sortSelect.value;
+  const sorted = [...cards];
+  if (order !== 'default') {
+    // 日本語として店名を比べます（濁点・長音・かな漢字の混在に対応）。
+    sorted.sort((a, b) => {
+      const nameA = a.querySelector('h3')?.textContent || '';
+      const nameB = b.querySelector('h3')?.textContent || '';
+      return nameA.localeCompare(nameB, 'ja');
+    });
+    if (order === 'name-desc') sorted.reverse();
+  }
+  for (const card of sorted) shopList.append(card);
+}
+
+sortSelect.addEventListener('change', sortShops);
