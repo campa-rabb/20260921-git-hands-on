@@ -43,6 +43,8 @@ document.querySelector('#reset-search').addEventListener('click', () => {
   searchInput.value = '';
   selectedCategory = 'all';
   filterShops();
+  sortSelect.value = 'default';
+  sortShops();
   searchInput.focus();
 });
 
