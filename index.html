@@ -3,222 +3,361 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#FAF8F5" />
-    <meta name="description" content="Conditioning Roastery（コンディショニング・ロースタリー）は、独自の焙煎プロファイルデータ解析と心身のウェルネス提案を行うスペシャルティコーヒー専門店です。" />
-    <title>Conditioning Roastery｜日々のパフォーマンスを引き出す、計算された一杯を。</title>
+    <meta name="theme-color" content="#f7f4eb" />
+    <meta
+      name="description"
+      content="海の近くの、小さなひだまり商店街。喫茶店、パン屋、本屋。いつもの毎日に、あたらしいお気に入りを見つけに。"
+    />
+    <title>ひだまり商店街｜海のそば、暮らしのそば。</title>
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script defer src="./src/main.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">本文へスキップ</a>
+
     <header class="site-header">
-      <a class="brand" href="./index.html" aria-label="Conditioning Roastery トップページ">
-        <span class="brand-dot"></span>
-        <span>Conditioning Roastery<small>SPECIALTY COFFEE & WELLNESS</small></span>
+      <a
+        class="brand"
+        href="./index.html"
+        aria-label="ひだまり商店街 トップページ"
+      >
+        <img src="./favicon.svg" width="43" height="43" alt="" />
+        <span>ひだまり商店街<small>HIDAMARI SHOPPING STREET</small></span>
       </a>
       <nav aria-label="メインナビゲーション">
-        <a href="#about">コンセプト・特徴</a>
-        <a href="#products">商品一覧</a>
-        <a href="#info">店舗のご案内</a>
+        <a href="#about">商店街について</a>
+        <a href="#shops">お店をさがす</a>
+        <a href="#news">お知らせ</a>
       </nav>
     </header>
 
-    <main id="main" class="detail-main section-container">
-      <nav class="breadcrumbs" aria-label="パンくずリスト">
-        <a href="./index.html">ホーム</a>
-        <span aria-hidden="true">/</span>
-        <span aria-current="page">Conditioning Roastery 本店</span>
-      </nav>
-      <article>
-        <!-- Detail Hero Section -->
-        <div class="detail-hero" id="about">
-          <div class="detail-image">
-            <img id="main-visual" src="images/focus_blend.png" alt="Conditioning Roastery メインビジュアル" width="800" height="560" />
-          </div>
-          <div class="detail-intro">
-            <p class="section-kicker">DATA × WELLNESS ROASTERY</p>
-            <span class="category-label">コーヒー豆専門店</span>
-            <h1>Conditioning Roastery</h1>
-            <p class="detail-tagline">日々のパフォーマンスを引き出す、計算された一杯を。</p>
-            <p class="detail-description">
-              独自の焙煎プロファイルデータを解析し、豆のポテンシャルを最大限に引き出す1度単位の温度管理と時間制御を実施。<br />
-              集中したい朝や、リラックスしたい夜など、その日のコンディション（体調）に合わせた最適なコーヒー豆を提案します。
-            </p>
-
-            <!-- Interactive Coffee Bean Selector Section -->
-            <div class="bean-selector-section">
-              <h3 class="selector-title">おすすめのコーヒー豆を選ぶ</h3>
-              <div class="selector-buttons">
-                <button type="button" class="selector-btn active" data-img="images/focus_blend.png" data-alt="Focus Blend (浅煎り) - 朝の集中">
-                  Focus Blend (浅煎り)
-                </button>
-                <button type="button" class="selector-btn" data-img="images/recovery_decaf.png" data-alt="Recovery Decaf (深煎り) - 夜のリラックス">
-                  Recovery Decaf (深煎り)
-                </button>
-              </div>
-            </div>
-
-            <p class="detail-location">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z" />
-                <circle cx="12" cy="10" r="2.5" />
-              </svg>
-              <span>Conditioning Roastery 本店（東京都渋谷区）</span>
-            </p>
-          </div>
+    <main id="main">
+      <section class="hero" id="about" aria-labelledby="hero-heading">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="little-sun" aria-hidden="true">✳</span>
+            海のそば、暮らしのそば。
+          </p>
+          <h1 id="hero-heading">
+            いつもの道に、<br />小さな<span>よりみち。</span>
+          </h1>
+          <p class="hero-description">
+            潮風にのって、パンの香り。<br />角を曲がれば、いつもの笑顔。<br />ひだまり商店街で、あなたのお気に入りを。
+          </p>
+          <a class="button button-primary" href="#shops"
+            >お店をのぞいてみる <span aria-hidden="true">↗</span></a
+          >
+          <p class="hero-footnote">
+            ふらっと、手ぶらで。今日もお待ちしています。
+          </p>
         </div>
-
-        <!-- Detail Columns Section (Products & Shop Info) -->
-        <div class="detail-columns">
-          <!-- Left Column: Products Section -->
-          <section class="products-section" id="products" aria-labelledby="products-heading">
-            <p class="section-kicker">OUR RECOMMENDATIONS</p>
-            <h2 id="products-heading">主力商品ラインナップ<span class="heading-dot" aria-hidden="true">。</span></h2>
-            <p class="price-note">価格はすべて税込の価格です。</p>
-
-            <!-- Nudge & Framing Banner -->
-            <div class="nudge-banner">
-              <span class="nudge-badge">初めての方へ</span>
-              <p>「初めての方には、一番人気の <strong>Focus Blend</strong> をおすすめします。」</p>
-            </div>
-
-            <!-- Products List -->
-            <ul class="products-list">
-              <!-- Product 1: Focus Blend (Framing Highlighted / Selected) -->
-              <li class="product-item selected-card" data-img="images/focus_blend.png" data-alt="Focus Blend (浅煎り) - 朝の集中">
-                <div class="product-image-container">
-                  <img src="images/focus_blend.png" alt="Focus Blend (浅煎り)" />
-                </div>
-                <div class="product-details">
-                  <div class="product-heading">
-                    <h3>
-                      Focus Blend 
-                      <span class="roast-badge roast-light">浅煎り</span> 
-                      <span class="recommend-chip">人気No.1</span>
-                    </h3>
-                    <span class="product-price">￥1,850 <small>/ 200g</small></span>
-                  </div>
-                  <p>集中力を高めたいデスクワーク時に最適な、フルーティーでクリアな酸味。思考をクリアにし、朝のアクティブなパフォーマンスをサポートします。</p>
-                </div>
-              </li>
-
-              <!-- Product 2: Recovery Decaf -->
-              <li class="product-item" data-img="images/recovery_decaf.png" data-alt="Recovery Decaf (深煎り) - 夜のリラックス">
-                <div class="product-image-container">
-                  <img src="images/recovery_decaf.png" alt="Recovery Decaf (深煎り)" />
-                </div>
-                <div class="product-details">
-                  <div class="product-heading">
-                    <h3>
-                      Recovery Decaf 
-                      <span class="roast-badge roast-dark">深煎り</span>
-                    </h3>
-                    <span class="product-price">￥1,950 <small>/ 200g</small></span>
-                  </div>
-                  <p>一日の終わりのリラックスタイムに寄り添う、カフェインレスで深いコクのある味わい。質の高い睡眠と休息を妨げずに満足感を提供します。</p>
-                </div>
-              </li>
-            </ul>
-          </section>
-
-          <!-- Right Column: Shop Info Section -->
-          <section class="shop-info" id="info" aria-labelledby="info-heading">
-            <h2 id="info-heading">お店のご案内</h2>
-            <dl>
-              <div>
-                <dt>特徴1（精密焙煎）</dt>
-                <dd>独自の焙煎プロファイルデータを解析し、1度単位の温度管理と時間制御を実施。</dd>
-              </div>
-              <div>
-                <dt>特徴2（ウェルネス）</dt>
-                <dd>集中したい朝やリラックスしたい夜など、その日のコンディションに合わせた豆を提案。</dd>
-              </div>
-              <div>
-                <dt>営業時間</dt>
-                <dd>8:00〜19:00（ラストオーダー 18:30）</dd>
-              </div>
-              <div>
-                <dt>定休日</dt>
-                <dd>水曜日</dd>
-              </div>
-              <div>
-                <dt>所在地</dt>
-                <dd>東京都渋谷区神宮前 1-2-3</dd>
-              </div>
-            </dl>
-            <p>日々のパフォーマンスを引き出す一杯を、<br />心を込めてお届けします。</p>
-          </section>
+        <div class="hero-art">
+          <img
+            src="./images/hero.svg"
+            alt="青い海へと続く道に、色とりどりのひさしのお店が並ぶひだまり商店街のイラスト"
+            width="1440"
+            height="650"
+            fetchpriority="high"
+          />
+          <span class="art-note">いい日、いい街、ひだまり。</span>
         </div>
-      </article>
+      </section>
 
-      <div class="detail-back">
-        <a class="button button-primary" href="#products">
-          おすすめの豆を選ぶ <span aria-hidden="true">↓</span>
-        </a>
+      <div class="welcome-strip">
+        <span class="welcome-title">ここには、好きがある。</span>
+        <p>
+          おいしいもの。手になじむもの。誰かにすすめたくなる一冊。<br
+            class="desktop-break"
+          />小さなお店がつなぐ、海辺のまちの日常です。
+        </p>
+        <span class="welcome-stamp" aria-hidden="true"
+          >海辺の<br /><strong>よりみち</strong></span
+        >
       </div>
+
+      <section
+        class="shops-section section-container"
+        id="shops"
+        aria-labelledby="shops-heading"
+      >
+        <div class="section-top">
+          <div>
+            <p class="section-kicker">MEET OUR NEIGHBORS</p>
+            <h2 id="shops-heading">
+              商店街のお店<span class="heading-dot" aria-hidden="true">。</span>
+            </h2>
+            <p class="section-description">
+              気になるお店から、のぞいてみませんか。
+            </p>
+          </div>
+          <form class="search-form" role="search" id="search-form">
+            <label for="shop-search">店名・紹介文でさがす</label>
+            <div class="search-input-wrap">
+              <svg
+                aria-hidden="true"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+              >
+                <circle cx="10.5" cy="10.5" r="6.5" />
+                <path d="m16 16 5 5" />
+              </svg>
+              <input
+                id="shop-search"
+                type="search"
+                name="q"
+                placeholder="コーヒー、本、花…"
+                autocomplete="off"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="shop-controls">
+          <div
+            class="category-filters"
+            id="category-filters"
+            role="group"
+            aria-label="お店のカテゴリ"
+          >
+            <button class="filter-button" type="button" data-category="all" aria-pressed="true">すべてのお店</button>
+            <button class="filter-button" type="button" data-category="food" aria-pressed="false">飲食店</button>
+            <button class="filter-button" type="button" data-category="cafe" aria-pressed="false">喫茶店</button>
+            <button class="filter-button" type="button" data-category="books" aria-pressed="false">書店</button>
+            <button class="filter-button" type="button" data-category="goods" aria-pressed="false">雑貨店</button>
+            <button class="filter-button" type="button" data-category="flowers" aria-pressed="false">花屋</button>
+          </div>
+          <p
+            class="result-count"
+            id="result-count"
+            role="status"
+            aria-live="polite"
+            aria-atomic="true"
+          >7店舗中 7店舗</p>
+        </div>
+        <div class="shop-grid" id="shop-list">
+          <!-- 店舗カード：カテゴリは food / cafe / books / goods / flowers。 -->
+          <!-- くらしの雑貨 つむぎ：この article が一覧の1店舗分です。 -->
+          <article class="shop-card" data-category="goods">
+            <a class="shop-card-link" href="./shops/kurashi-zakka.html">
+              <div class="shop-card-image">
+                <img src="./images/shops/kurashi-zakka.svg" alt="陶器の花瓶とボトル、お皿、カップが並ぶイラスト" width="800" height="560" loading="lazy" />
+                <span class="card-visit" aria-hidden="true">↗</span>
+              </div>
+              <div class="shop-card-body">
+                <p class="card-meta">
+                  <span class="category-label">雑貨店</span>
+                  <span class="card-address">波音小路 2-6</span>
+                </p>
+                <h3>くらしの雑貨 つむぎ</h3>
+                <p class="card-tagline">いつもの暮らしに、小さなお気に入り。</p>
+                <p class="card-description">使うほどに手になじむ器、やわらかな布もの、机の上が少し楽しくなる文房具。つむぎは、毎日の暮らしで長く使える道具を集めた雑貨店です。棚のあちこちに、小さな工房から届いた品が並びます。自分へのおみやげにも、大切な人への贈りものにも。迷ったときは、店主と一緒にゆっくり選びましょう。</p>
+                <span class="card-detail">お店について <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+          </article>
+
+          <!-- しおかぜベーカリー：この article が一覧の1店舗分です。 -->
+          <article class="shop-card" data-category="food">
+            <a class="shop-card-link" href="./shops/shiokaze-bakery.html">
+              <div class="shop-card-image">
+                <img src="./images/shops/shiokaze-bakery.svg" alt="紙袋に入ったバゲットと焼きたてのパンのイラスト" width="800" height="560" loading="lazy" />
+                <span class="card-visit" aria-hidden="true">↗</span>
+              </div>
+              <div class="shop-card-body">
+                <p class="card-meta">
+                  <span class="category-label">飲食店</span>
+                  <span class="card-address">こもれび通り 1-5</span>
+                </p>
+                <h3>しおかぜベーカリー</h3>
+                <p class="card-tagline">朝の商店街に、焼きたてのしあわせ。</p>
+                <p class="card-description">早起きした朝に寄りたくなる、家族で営むまちのパン屋です。毎朝少しずつ焼くパンは、毎日食べても飽きない素朴な味。看板の塩バターロールは、底のかりっとした食感が自慢です。お昼には季節の野菜を挟んだサンドイッチも並びます。紙袋を抱えて、海辺のベンチまでお散歩しませんか。</p>
+                <span class="card-detail">お店について <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+          </article>
+
+          <!-- 港食堂：この article が一覧の1店舗分です。 -->
+          <article class="shop-card" data-category="food">
+            <a class="shop-card-link" href="./shops/minato-shokudo.html">
+              <div class="shop-card-image">
+                <img src="./images/shops/minato-shokudo.svg" alt="アジフライとお味噌汁、ご飯の定食のイラスト" width="800" height="560" loading="lazy" />
+                <span class="card-visit" aria-hidden="true">↗</span>
+              </div>
+              <div class="shop-card-body">
+                <p class="card-meta">
+                  <span class="category-label">飲食店</span>
+                  <span class="card-address">港見坂 3-4</span>
+                </p>
+                <h3>港食堂</h3>
+                <p class="card-tagline">海が見える坂道、いつもの定食。</p>
+                <p class="card-description">毎朝市場から仕入れる新鮮な魚と、あつあつのご飯。港食堂は、お腹をすかせた人が集まるまちの定食屋です。人気のアジフライは、衣はサクサク、身はふっくら。小鉢のお惣菜も毎日変わります。仕事の合間にも、海へ遊びに行った帰りにも。しっかり食べて、元気になって帰ってください。</p>
+                <span class="card-detail">お店について <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+          </article>
+
+          <!-- 花と、日々。：この article が一覧の1店舗分です。 -->
+          <article class="shop-card" data-category="flowers">
+            <a class="shop-card-link" href="./shops/hanato.html">
+              <div class="shop-card-image">
+                <img src="./images/shops/hanato.svg" alt="一輪挿しの花瓶に生けられた季節のお花のイラスト" width="800" height="560" loading="lazy" />
+                <span class="card-visit" aria-hidden="true">↗</span>
+              </div>
+              <div class="shop-card-body">
+                <p class="card-meta">
+                  <span class="category-label">花屋</span>
+                  <span class="card-address">こもれび通り 3-1</span>
+                </p>
+                <h3>花と、日々。</h3>
+                <p class="card-tagline">一輪からはじまる、いい一日。</p>
+                <p class="card-description">店先に季節の花と緑があふれる、商店街の小さな花屋です。特別な日の花束はもちろん、食卓に飾る一輪も気軽にどうぞ。花の名前やお手入れのことは、その場でお伝えします。ご予算や贈る相手の雰囲気に合わせた花束も承ります。お買いもの帰りに、今日の気分に似た色を探してみてください。</p>
+                <span class="card-detail">お店について <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+          </article>
+
+          <!-- 喫茶こもれび：この article が一覧の1店舗分です。 -->
+          <article class="shop-card" data-category="cafe">
+            <a class="shop-card-link" href="./shops/komorebi-kissa.html">
+              <div class="shop-card-image">
+                <img src="./images/shops/komorebi-kissa.svg" alt="コーヒーと厚切りバタートーストを木のテーブルに並べたイラスト" width="800" height="560" loading="lazy" />
+                <span class="card-visit" aria-hidden="true">↗</span>
+              </div>
+              <div class="shop-card-body">
+                <p class="card-meta">
+                  <span class="category-label">喫茶店</span>
+                  <span class="card-address">こもれび通り 1-2</span>
+                </p>
+                <h3>喫茶こもれび</h3>
+                <p class="card-tagline">いつもの一杯と、何もしない時間。</p>
+                <p class="card-description">商店街の角で、ゆっくりとコーヒーを淹れる小さな喫茶店です。朝の光が差す窓辺には、使い込まれた木の椅子と、少しだけ背の低いテーブル。深煎りのブレンドと昔ながらの固めのプリンをおともに、散歩の途中でひと息ついていってください。おひとりでも、本を片手でも、どうぞ。</p>
+                <span class="card-detail">お店について <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+          </article>
+
+          <!-- 波まち書房：この article が一覧の1店舗分です。 -->
+          <article class="shop-card" data-category="books">
+            <a class="shop-card-link" href="./shops/nami-books.html">
+              <div class="shop-card-image">
+                <img src="./images/shops/nami-books.svg" alt="開いた本と色とりどりの本を重ねたイラスト" width="800" height="560" loading="lazy" />
+                <span class="card-visit" aria-hidden="true">↗</span>
+              </div>
+              <div class="shop-card-body">
+                <p class="card-meta">
+                  <span class="category-label">書店</span>
+                  <span class="card-address">波音小路 2-3</span>
+                </p>
+                <h3>波まち書房</h3>
+                <p class="card-tagline">まだ知らない一冊と、待ち合わせ。</p>
+                <p class="card-description">旅のエッセイ、暮らしの本、絵本に小さな出版社の読み物。店主が一冊ずつ選んだ本が、古い木の棚に並ぶ書店です。海の見えるまちで読みたい本を集めた「波まちの棚」には、手書きのおすすめも添えています。探している本が決まっていなくても大丈夫。ページをめくりながら、気になる一冊を見つけてください。</p>
+                <span class="card-detail">お店について <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+          </article>
+
+          <!-- Conditioning Roastery：新規追加されたコーヒー豆専門店の店舗カードです。 -->
+          <article class="shop-card" data-category="cafe">
+            <a class="shop-card-link" href="./shops/conditioning-roastery.html">
+              <div class="shop-card-image">
+                <img src="./images/focus_blend.png" alt="Focus Blend コーヒーとロースタリーのイラスト" width="800" height="560" loading="lazy" />
+                <span class="card-visit" aria-hidden="true">↗</span>
+              </div>
+              <div class="shop-card-body">
+                <p class="card-meta">
+                  <span class="category-label">コーヒー豆専門店</span>
+                  <span class="card-address">こもれび通り 1-2</span>
+                </p>
+                <h3>Conditioning Roastery</h3>
+                <p class="card-tagline">日々のパフォーマンスを引き出す、計算された一杯を。</p>
+                <p class="card-description">独自の焙煎プロファイルデータを解析し、豆のポテンシャルを最大限に引き出す1度単位の温度管理と時間制御を実施。集中したい朝や、リラックスしたい夜など、その日のコンディション（体調）に合わせた最適なコーヒー豆を提案します。</p>
+                <span class="card-detail">お店について <span aria-hidden="true">→</span></span>
+              </div>
+            </a>
+          </article>
+
+          <!-- 新しいお店のカードを、この行の上に追加してください。 -->
+        </div>
+        <div class="empty-state" id="no-results" hidden>
+          <span class="empty-icon" aria-hidden="true">⌕</span>
+          <h3>お店が見つかりませんでした</h3>
+          <p>別の言葉でさがすか、カテゴリを変えてみてください。</p>
+          <button class="button button-outline" id="reset-search" type="button">
+            検索条件をリセット
+          </button>
+        </div>
+        <noscript
+          ><p class="empty-state">
+            すべてのお店を表示しています。検索とカテゴリ絞り込みを使う場合は、JavaScriptを有効にしてください。
+          </p></noscript
+        >
+      </section>
+
+      <section class="news-section" id="news" aria-labelledby="news-heading">
+        <div class="section-container news-layout">
+          <div class="news-heading">
+            <p class="section-kicker">STREET JOURNAL</p>
+            <h2 id="news-heading">
+              まちの<br class="desktop-break" />お知らせ<span
+                class="heading-dot"
+                aria-hidden="true"
+                >。</span
+              >
+            </h2>
+            <p>商店街の、ちいさなできごと。</p>
+            <span class="news-flower" aria-hidden="true">✳</span>
+          </div>
+          <div class="news-list" id="news-list">
+            <!-- 新しいお知らせは details をコピーして、この下の先頭に追加します。 -->
+            <details class="news-item">
+              <summary>
+                <span class="news-meta"><time datetime="2026-09-18">2026.09.18</time><span class="news-category">イベント</span></span>
+                <span class="news-title">秋の「ひだまりよりみち市」を開催します</span>
+              </summary>
+              <p>10月11日（日）10:00〜15:00、商店街の小さな広場に焼き菓子や古本、季節の花が集まります。お散歩がてら、お立ち寄りください。</p>
+            </details>
+            <details class="news-item">
+              <summary>
+                <span class="news-meta"><time datetime="2026-09-12">2026.09.12</time><span class="news-category">まちの便り</span></span>
+                <span class="news-title">潮風通りに、ひと休みできるベンチができました</span>
+              </summary>
+              <p>お買い物の合間に、海を眺めてひと息。商店街の入口に木のベンチを置きました。お持ち帰りのコーヒーのおともにもどうぞ。</p>
+            </details>
+            <details class="news-item">
+              <summary>
+                <span class="news-meta"><time datetime="2026-09-01">2026.09.01</time><span class="news-category">お知らせ</span></span>
+                <span class="news-title">ひだまり商店街の案内サイトができました</span>
+              </summary>
+              <p>商店街のお店や、日々のできごとをお届けします。次のお休みに行ってみたいお店を、見つけていただけたらうれしいです。</p>
+            </details>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
       <div class="footer-top">
-        <a class="brand" href="./index.html">
-          <span class="brand-dot"></span>
-          <span>Conditioning Roastery<small>SPECIALTY COFFEE & WELLNESS</small></span>
-        </a>
-        <p>日々のパフォーマンスを引き出す、計算された一杯を。</p>
-        <a class="back-top" href="#main">ページの先頭へ <span aria-hidden="true">↑</span></a>
+        <a class="brand" href="./index.html"
+          ><img src="./favicon.svg" width="38" height="38" alt="" /><span
+            >ひだまり商店街<small>HIDAMARI SHOPPING STREET</small></span
+          ></a
+        >
+        <p>また、ふらっと寄ってください。</p>
+        <a class="back-top" href="#main"
+          >ページの先頭へ <span aria-hidden="true">↑</span></a
+        >
       </div>
       <div class="footer-bottom">
-        <p>このサイトはGit・GitHubハンズオン用です。</p>
-        <span>© 2026 Conditioning Roastery</span>
+        <p>
+          このサイトはGit・GitHubハンズオン用です。商店街・店舗・住所・お知らせはすべて架空のものです。
+        </p>
+        <span>© 2026 ひだまり商店街</span>
       </div>
     </footer>
 
-    <!-- Interactive Bean & Card Switcher Script -->
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const mainVisual = document.getElementById('main-visual');
-        const selectorBtns = document.querySelectorAll('.selector-btn');
-        const productCards = document.querySelectorAll('.product-item');
-
-        function updateSelection(index) {
-          const targetBtn = selectorBtns[index];
-          const targetCard = productCards[index];
-          if (!targetBtn || !targetCard) return;
-
-          const newImgSrc = targetBtn.getAttribute('data-img');
-          const newAlt = targetBtn.getAttribute('data-alt');
-
-          // Update main visual image with smooth fade transition
-          if (mainVisual && newImgSrc) {
-            mainVisual.style.opacity = '0.3';
-            setTimeout(() => {
-              mainVisual.src = newImgSrc;
-              if (newAlt) mainVisual.alt = newAlt;
-              mainVisual.style.opacity = '1';
-            }, 150);
-          }
-
-          // Update selector buttons active state (.active)
-          selectorBtns.forEach((btn, i) => {
-            btn.classList.toggle('active', i === index);
-          });
-
-          // Update product cards selected state (.selected-card)
-          productCards.forEach((card, i) => {
-            card.classList.toggle('selected-card', i === index);
-          });
-        }
-
-        // Add click events to selector buttons
-        selectorBtns.forEach((btn, index) => {
-          btn.addEventListener('click', () => updateSelection(index));
-        });
-
-        // Add click events to product cards
-        productCards.forEach((card, index) => {
-          card.addEventListener('click', () => updateSelection(index));
-        });
-      });
-    </script>
   </body>
 </html>
