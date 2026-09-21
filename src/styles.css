@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
 /* 色・余白・文字を変えるときは、まずここから。全ページ共通のスタイルです。 */
 :root {
   --paper: #f8f6ee;
@@ -7,8 +8,10 @@
   --red: #ab452e;
   --orange: #e8a352;
   --line: #dcded1;
-  --serif: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", serif;
-  --sans: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+  /* --serif: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", serif; */
+  /* --sans: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif; */
+  --serif: "Yomogi", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --sans: "Yomogi", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
   color: var(--ink);
   background: var(--paper);
   font-family: var(--sans);
