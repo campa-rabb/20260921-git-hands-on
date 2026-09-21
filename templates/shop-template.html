@@ -13,6 +13,7 @@
     <!-- このファイルを shops/p01-nami-cafe.html にコピーして編集します。
          ファイル名は重複しない小文字の英数字・ハイフンを使ってください。
          title・meta description・パンくず・店名・紹介・営業情報・商品を変更します。
+         main の data-shop は一覧カードと同じ値にします。色の設定方法は README.md を参照してください。
          一覧への追加には templates/shop-card.html のカードも index.html にコピーします。 -->
     <a class="skip-link" href="#main">本文へスキップ</a>
     <header class="site-header">
@@ -27,7 +28,7 @@
       </nav>
     </header>
 
-    <main id="main" class="detail-main section-container">
+    <main id="main" class="detail-main section-container" data-shop="p01-nami-cafe">
       <nav class="breadcrumbs" aria-label="パンくずリスト">
         <a href="../index.html">ホーム</a>
         <span aria-hidden="true">/</span>

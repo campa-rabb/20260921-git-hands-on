@@ -96,6 +96,30 @@ cp templates/shop-template.html shops/p01-nami-cafe.html
 
 検索はカード内の店名（`h3`）、キャッチコピー（`.card-tagline`）、紹介文（`.card-description`）を対象にします。コピーしたカードのクラス名はそのまま使ってください。詳しい説明だけでなく、一覧の紹介文にもお店の特徴を書くと見つけやすくなります。
 
+#### お店のイメージカラーを付ける（任意）
+
+一覧カードの `<article>` と詳細ページの `<main>` に、同じ `data-shop` を指定します。値には店舗のファイル名から `.html` を除いた名前を使います。カテゴリが同じお店にも、それぞれ別の色を設定できます。
+
+```html
+<!-- index.html のカード -->
+<article class="shop-card" data-category="cafe" data-shop="p01-nami-cafe">
+
+<!-- shops/p01-nami-cafe.html の main -->
+<main id="main" class="detail-main section-container" data-shop="p01-nami-cafe">
+```
+
+`src/styles.css` の店舗色の並びに、次のように3色を追加します。主色は文字が読みやすい濃い色、背景色と枠線色は同系色の淡い色にします。色を追加しなくても、商店街共通のテラコッタ色で表示されます。
+
+```css
+[data-shop="p01-nami-cafe"] {
+  --shop-color: #3f6650; /* 文字・差し色 */
+  --shop-tint: #eaf0e6; /* 淡い背景色 */
+  --shop-line: #b8cab4; /* 枠線色 */
+}
+```
+
+カードのライン・店名・カテゴリ・矢印と、詳細ページのキャッチコピー・価格・案内欄に同じ色が反映されます。色を変えたら、白・紙色・淡い背景のそれぞれで文字が読みやすいか確認してください。
+
 ### 4. 画像を付ける（任意）
 
 **画像なしで追加する場合は、ひな形の共通イラストをそのまま使えば完成です。** `img` 要素を削除したり、`src` を空にしたりする必要はありません。

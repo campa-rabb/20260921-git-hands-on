@@ -7,6 +7,10 @@
   --red: #ab452e;
   --orange: #e8a352;
   --line: #dcded1;
+  /* 店舗色を指定しない場合は、商店街のテラコッタ色を使います。 */
+  --shop-color: #ab452e;
+  --shop-tint: #f5eadd;
+  --shop-line: #dfc4b4;
   --serif: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", serif;
   --sans: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
   color: var(--ink);
@@ -17,6 +21,43 @@
   font-weight: 400;
   scroll-behavior: smooth;
   scroll-padding-top: 24px;
+}
+/* 一覧の article と詳細の main に同じ data-shop を付けると、色がそろいます。 */
+[data-shop="kurashi-zakka"] {
+  /* つむぎ：暮らしの道具を思わせる真鍮色 */
+  --shop-color: #766333;
+  --shop-tint: #f4f0e3;
+  --shop-line: #d6c9a5;
+}
+[data-shop="shiokaze-bakery"] {
+  /* しおかぜベーカリー：香ばしいパンの焼き色 */
+  --shop-color: #985529;
+  --shop-tint: #f8eee1;
+  --shop-line: #dfbfa0;
+}
+[data-shop="minato-shokudo"] {
+  /* みなと食堂：海辺ののれんを思わせる青緑 */
+  --shop-color: #376b79;
+  --shop-tint: #e8f0f1;
+  --shop-line: #b3cdd0;
+}
+[data-shop="hanato"] {
+  /* 花と、日々。：花びらのようなくすみローズ */
+  --shop-color: #a04f64;
+  --shop-tint: #f8eaee;
+  --shop-line: #ddb8c3;
+}
+[data-shop="komorebi-kissa"] {
+  /* 喫茶こもれび：木陰と緑のカップを思わせる深緑 */
+  --shop-color: #3f6650;
+  --shop-tint: #eaf0e6;
+  --shop-line: #b8cab4;
+}
+[data-shop="nami-books"] {
+  /* 波まち書房：静かな読書時間に似合うブルーグレー */
+  --shop-color: #506581;
+  --shop-tint: #ebeef4;
+  --shop-line: #becadc;
 }
 * {
   box-sizing: border-box;
@@ -391,19 +432,26 @@ h2 {
   background: var(--white);
   border-radius: 5px;
   overflow: hidden;
-  border: 1px solid #e2e2d6;
+  border: 1px solid var(--shop-line);
   transition:
+    border-color 0.22s,
     box-shadow 0.22s,
     transform 0.22s;
 }
-.shop-card-link:hover {
+.shop-card-link:hover,
+.shop-card-link:focus-visible {
+  border-color: var(--shop-color);
   box-shadow: 0 8px 24px #38372c0b;
   transform: translateY(-4px);
+}
+.shop-card-link:focus-visible {
+  outline-color: var(--shop-color);
 }
 .shop-card-image {
   position: relative;
   overflow: hidden;
   background: #e9e8db;
+  border-bottom: 4px solid var(--shop-color);
   aspect-ratio: 1.65;
 }
 .shop-card-image img {
@@ -412,14 +460,16 @@ h2 {
   object-fit: cover;
   transition: transform 0.35s;
 }
-.shop-card-link:hover .shop-card-image img {
+.shop-card-link:hover .shop-card-image img,
+.shop-card-link:focus-visible .shop-card-image img {
   transform: scale(1.04);
 }
 .card-visit {
   position: absolute;
   right: 13px;
   bottom: 13px;
-  background: var(--white);
+  color: var(--white);
+  background: var(--shop-color);
   width: 34px;
   height: 34px;
   border-radius: 50%;
@@ -438,10 +488,10 @@ h2 {
 }
 .category-label {
   display: inline-block;
-  color: var(--red);
+  color: var(--shop-color);
   font-size: 12px;
   padding: 2px 9px;
-  background: #f5eadd;
+  background: var(--shop-tint);
   border-radius: 2px;
   white-space: nowrap;
 }
@@ -451,6 +501,7 @@ h2 {
   text-align: right;
 }
 .shop-card h3 {
+  color: var(--shop-color);
   font-family: var(--serif);
   font-size: 23px;
   margin-top: 12px;
@@ -478,12 +529,13 @@ h2 {
   justify-content: space-between;
   margin-top: 18px;
   padding-top: 12px;
-  border-top: 1px solid #eeede6;
+  border-top: 1px solid var(--shop-line);
+  color: var(--shop-color);
   font-size: 12px;
   font-weight: 500;
 }
 .card-detail > span {
-  color: var(--red);
+  color: var(--shop-color);
   font-size: 18px;
 }
 .empty-state {
@@ -637,6 +689,10 @@ h2 {
   padding-top: 24px;
   padding-bottom: 62px;
 }
+.detail-main .section-kicker,
+.detail-main .heading-dot {
+  color: var(--shop-color);
+}
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
@@ -646,7 +702,7 @@ h2 {
   margin-bottom: 30px;
 }
 .breadcrumbs a:hover {
-  color: var(--red);
+  color: var(--shop-color);
   text-decoration: underline;
 }
 .detail-hero {
@@ -659,6 +715,7 @@ h2 {
   border-radius: 5px;
   overflow: hidden;
   background: #ebe7d9;
+  border-bottom: 6px solid var(--shop-color);
 }
 .detail-image img {
   width: 100%;
@@ -680,7 +737,7 @@ h2 {
   overflow-wrap: anywhere;
 }
 .detail-tagline {
-  color: var(--red);
+  color: var(--shop-color);
   font-family: var(--serif);
   font-size: 20px;
   font-weight: 600;
@@ -742,7 +799,7 @@ h2 {
   overflow-wrap: anywhere;
 }
 .product-price {
-  color: var(--red);
+  color: var(--shop-color);
   font-size: 18px;
   font-weight: 600;
   flex-shrink: 0;
@@ -754,10 +811,12 @@ h2 {
 }
 .shop-info {
   padding: 29px 30px;
-  background: #edeedf;
+  background: var(--shop-tint);
+  border-top: 3px solid var(--shop-color);
   border-radius: 5px;
 }
 .shop-info h2 {
+  color: var(--shop-color);
   font-size: 24px;
   margin-bottom: 17px;
 }
@@ -766,7 +825,7 @@ h2 {
 }
 .shop-info dl > div {
   padding: 13px 0;
-  border-top: 1px solid #d2d6c5;
+  border-top: 1px solid var(--shop-line);
   display: grid;
   grid-template-columns: 75px 1fr;
   gap: 12px;
@@ -784,12 +843,19 @@ h2 {
 }
 .shop-info > p {
   margin-top: 24px;
-  color: #5d6853;
+  color: var(--shop-color);
   font-family: var(--serif);
   font-size: 15px;
 }
 .detail-back {
   text-align: center;
+}
+.detail-back .button-outline {
+  color: var(--shop-color);
+  border-color: var(--shop-color);
+}
+.detail-back .button-outline:hover {
+  background: var(--shop-tint);
 }
 .detail-empty {
   margin-bottom: 35px;
