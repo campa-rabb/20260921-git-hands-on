@@ -352,25 +352,48 @@ h2 {
 }
 .category-filters {
   display: flex;
-  gap: 9px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 .filter-button {
-  background: transparent;
-  border: 1px solid #cdd0c3;
-  border-radius: 30px;
-  min-height: 41px;
+  background: var(--white);
+  border: 1px solid #d8cbb7;
+  border-radius: 6px;
+  min-height: 44px;
+  color: #665443;
+  font-family: var(--serif);
   font-size: 13px;
-  padding: 7px 20px;
-  transition: background 0.18s;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 8px 20px;
+  box-shadow: 0 2px 0 #e7dfd0;
+  transition:
+    background 0.18s,
+    border-color 0.18s,
+    color 0.18s,
+    box-shadow 0.18s,
+    transform 0.18s;
 }
 .filter-button:hover {
-  background: #e8e9df;
+  color: var(--red);
+  background: #f5eadd;
+  border-color: #c49b7f;
+  box-shadow: 0 3px 0 #e7dfd0;
+  transform: translateY(-1px);
 }
 .filter-button[aria-pressed="true"] {
   color: var(--white);
-  background: var(--ink);
-  border-color: var(--ink);
+  background: var(--red);
+  border-color: var(--red);
+  box-shadow: 0 2px 0 #813b2b;
+}
+.filter-button[aria-pressed="true"]:hover {
+  background: #8b3422;
+  border-color: #8b3422;
+}
+.filter-button:active {
+  transform: translateY(1px);
+  box-shadow: none;
 }
 .result-count {
   font-size: 12px;
