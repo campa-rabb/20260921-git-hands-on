@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="title desc"><title id="title">しおかぜベーカリーの焼きたてパン</title><desc id="desc">紙袋からのぞくバゲットと、焼きたてのクロワッサン、丸いパン。</desc><defs><pattern id="paper" width="45" height="45" patternUnits="userSpaceOnUse"><circle cx="8" cy="13" r=".8" fill="#7d6650" opacity=".1"/><circle cx="32" cy="36" r=".7" fill="#7d6650" opacity=".08"/></pattern></defs><rect width="800" height="560" fill="#e5c6a7"/>
-<path d="M0 0h800v144H0Z" fill="#f1e2c5"/><path d="M0 0h800v37H0Z" fill="#c28561"/><path d="M0 91h800m-723 0v53m140-53v53m140-53v53m140-53v53m140-53v53" stroke="#d6bc95" stroke-width="2"/>
-<path d="M0 423h800v137H0Z" fill="#d0a579"/><path d="M0 476h800m-607-53v137m354-137v137" stroke="#bb946c" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="title desc"><title id="title">しおかぜベーカリーの焼きたてパン</title><desc id="desc">紙袋からのぞくバゲットと、焼きたてのクロワッサン、丸いパン。</desc><defs><pattern id="paper" width="45" height="45" patternUnits="userSpaceOnUse"><circle cx="8" cy="13" r=".8" fill="#8a4a28" opacity=".1"/><circle cx="32" cy="36" r=".7" fill="#8a4a28" opacity=".08"/></pattern></defs><rect width="800" height="560" fill="#f0d2ae"/>
+<path d="M0 0h800v144H0Z" fill="#f6e4c8"/><path d="M0 0h800v37H0Z" fill="#b45d32"/><path d="M0 91h800m-723 0v53m140-53v53m140-53v53m140-53v53m140-53v53" stroke="#e0c197" stroke-width="2"/>
+<path d="M0 423h800v137H0Z" fill="#d7a06a"/><path d="M0 476h800m-607-53v137m354-137v137" stroke="#c4844e" stroke-width="2"/>
 <ellipse cx="425" cy="470" rx="284" ry="32" fill="#876446" opacity=".16"/>
 <g stroke="#88603e" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
 <path d="M319 337l60-198q8-30 28-26t17 32l-31 204Z" fill="#c48d4d"/><path d="M332 326l59-180q7-16 15-14" fill="none" stroke="#e8ba76" stroke-width="11"/><path d="m362 235 35-19m-24-19 29-18m-16-21 19-10m-53 123 39-17" stroke="#f2d39a" stroke-width="8"/>

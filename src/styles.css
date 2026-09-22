@@ -8,6 +8,7 @@
   --red: #ab452e;
   --orange: #e8a352;
   --line: #dcded1;
+  --shop-tint: #f5eadd;
   /* --serif: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", serif; */
   /* --sans: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", sans-serif; */
   --serif: "Yomogi", "Hiragino Mincho ProN", "Yu Mincho", serif;
@@ -20,6 +21,37 @@
   font-weight: 390;
   scroll-behavior: smooth;
   scroll-padding-top: 24px;
+}
+/* 各店舗のイメージカラー。一覧カードの data-shop と、詳細ページの body class で切り替えます。 */
+.shop-card[data-shop="kurashi-zakka"],
+.shop-theme-kurashi-zakka {
+  --red: #3f7168;
+  --shop-tint: #dceae4;
+}
+.shop-card[data-shop="shiokaze-bakery"],
+.shop-theme-shiokaze-bakery {
+  --red: #b45d32;
+  --shop-tint: #f6e4d0;
+}
+.shop-card[data-shop="minato-shokudo"],
+.shop-theme-minato-shokudo {
+  --red: #2f5570;
+  --shop-tint: #dbe6ef;
+}
+.shop-card[data-shop="hanato"],
+.shop-theme-hanato {
+  --red: #b85d5a;
+  --shop-tint: #f6e4e0;
+}
+.shop-card[data-shop="komorebi-kissa"],
+.shop-theme-komorebi-kissa {
+  --red: #5a6b42;
+  --shop-tint: #e7eed9;
+}
+.shop-card[data-shop="nami-books"],
+.shop-theme-nami-books {
+  --red: #3a6d86;
+  --shop-tint: #d8e7ef;
 }
 * {
   box-sizing: border-box;
@@ -439,12 +471,15 @@ h2 {
   border-radius: 5px;
   overflow: hidden;
   border: 1px solid #e2e2d6;
+  box-shadow: inset 0 4px 0 var(--red);
   transition:
     box-shadow 0.22s,
     transform 0.22s;
 }
 .shop-card-link:hover {
-  box-shadow: 0 8px 24px #38372c0b;
+  box-shadow:
+    inset 0 4px 0 var(--red),
+    0 8px 24px #38372c0b;
   transform: translateY(-4px);
 }
 .shop-card-image {
@@ -488,7 +523,7 @@ h2 {
   color: var(--red);
   font-size: 12px;
   padding: 2px 9px;
-  background: #f5eadd;
+  background: var(--shop-tint);
   border-radius: 2px;
   white-space: nowrap;
 }
@@ -803,6 +838,10 @@ h2 {
   padding: 29px 30px;
   background: #edeedf;
   border-radius: 5px;
+}
+body[class*="shop-theme-"] .shop-info,
+body[class*="shop-theme-"] .detail-image {
+  background: var(--shop-tint);
 }
 .shop-info h2 {
   font-size: 24px;

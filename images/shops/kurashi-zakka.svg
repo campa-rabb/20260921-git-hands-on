@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="title desc"><title id="title">くらしの雑貨 つむぎのうつわ</title><desc id="desc">木の棚に並んだ青緑色の花瓶、琥珀色の瓶と、素朴な陶器の皿とカップ。</desc><defs><pattern id="paper" width="45" height="45" patternUnits="userSpaceOnUse"><circle cx="8" cy="13" r=".8" fill="#7d6650" opacity=".1"/><circle cx="32" cy="36" r=".7" fill="#7d6650" opacity=".08"/></pattern></defs><rect width="800" height="560" fill="#ded8c0"/>
-<path d="M0 102h800v15H0Z" fill="#c4b593"/><path d="M76 0v102m43-102v102m566-102v102m43-102v102" stroke="#c2b390" stroke-width="2"/>
-<path d="M0 432q455-36 800 0v128H0Z" fill="#c5b591"/><path d="M0 495q386-14 800 9" fill="none" stroke="#b4a480" stroke-width="2"/>
-<ellipse cx="259" cy="453" rx="155" ry="26" fill="#9d9274" opacity=".25"/><ellipse cx="576" cy="468" rx="139" ry="21" fill="#9d9274" opacity=".25"/>
-<g stroke="#69634d" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
-<path d="M208 244v-56h72v56q74 56 53 159-12 54-91 54-86-3-88-57-11-100 54-156Z" fill="#789a8b"/><ellipse cx="244" cy="188" rx="36" ry="9" fill="#abc0a5"/><path d="M174 333q-4 62 13 83" fill="none" stroke="#a9bba0" stroke-width="7"/><path d="M157 363q88 21 179-2" fill="none" stroke="#618275" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="title desc"><title id="title">くらしの雑貨 つむぎのうつわ</title><desc id="desc">木の棚に並んだ青緑色の花瓶、琥珀色の瓶と、素朴な陶器の皿とカップ。</desc><defs><pattern id="paper" width="45" height="45" patternUnits="userSpaceOnUse"><circle cx="8" cy="13" r=".8" fill="#4a675c" opacity=".1"/><circle cx="32" cy="36" r=".7" fill="#4a675c" opacity=".08"/></pattern></defs><rect width="800" height="560" fill="#d4ddd6"/>
+<path d="M0 102h800v15H0Z" fill="#b5c4b6"/><path d="M76 0v102m43-102v102m566-102v102m43-102v102" stroke="#a8b8aa" stroke-width="2"/>
+<path d="M0 432q455-36 800 0v128H0Z" fill="#b4c2b4"/><path d="M0 495q386-14 800 9" fill="none" stroke="#98aa9a" stroke-width="2"/>
+<ellipse cx="259" cy="453" rx="155" ry="26" fill="#7d8f82" opacity=".25"/><ellipse cx="576" cy="468" rx="139" ry="21" fill="#7d8f82" opacity=".25"/>
+<g stroke="#3f574e" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<path d="M208 244v-56h72v56q74 56 53 159-12 54-91 54-86-3-88-57-11-100 54-156Z" fill="#3f7168"/><ellipse cx="244" cy="188" rx="36" ry="9" fill="#8fb6a8"/><path d="M174 333q-4 62 13 83" fill="none" stroke="#9fc4b4" stroke-width="7"/><path d="M157 363q88 21 179-2" fill="none" stroke="#2f5a52" stroke-width="2"/>
 <path d="M246 188q-11-83 41-164m-44 122q-41-23-57-68m65 37q38-13 56-45m-47 13q-3-51 19-61" fill="none" stroke="#6c7f61"/>
 <path d="M229 129q-36 1-44-46 31 9 44 46m17-48q-33-18-19-59 25 23 19 59m11 24q42 8 54-33-36 0-54 33m12-50q42-8 32-43-24 10-32 43" fill="#a2ad81" stroke="#7c8f68" stroke-width="2"/>
 <path d="M429 194v-34h44v34q22 18 20 42v130q-2 18-42 18t-41-18V236q-2-25 19-42Z" fill="#ba8e53"/><rect x="427" y="147" width="48" height="19" rx="3" fill="#947446"/><path d="M422 233v115" stroke="#d8b879" stroke-width="5"/>
