@@ -1,14 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="title desc"><title id="title">波まち書房の本と読書席</title><desc id="desc">窓辺に並ぶ色とりどりの本と、開かれた本。海のそばの静かな読書の時間。</desc><defs><pattern id="paper" width="45" height="45" patternUnits="userSpaceOnUse"><circle cx="8" cy="13" r=".8" fill="#7d6650" opacity=".1"/><circle cx="32" cy="36" r=".7" fill="#7d6650" opacity=".08"/></pattern></defs><rect width="800" height="560" fill="#d6ded0"/>
-<path d="M519 0h281v278H519Z" fill="#edf0de"/><path d="M535 0v265m126-265v265m-127-130h266" stroke="#a6b8a3" stroke-width="8"/><path d="M539 222q97-17 261 0v43H539Z" fill="#a6c1b9"/><path d="m665 80 13-7 14 7m-95 84 10-6 12 6" fill="none" stroke="#839c92" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="title desc"><title id="title">波まち書房の本と読書席</title><desc id="desc">窓辺に並ぶ色とりどりの本と、開かれた本。海のそばの静かな読書の時間。</desc><defs><pattern id="paper" width="45" height="45" patternUnits="userSpaceOnUse"><circle cx="8" cy="13" r=".8" fill="#2f5570" opacity=".1"/><circle cx="32" cy="36" r=".7" fill="#2f5570" opacity=".08"/></pattern></defs><rect width="800" height="560" fill="#d0dbe4"/>
+<path d="M519 0h281v278H519Z" fill="#e6eef3"/><path d="M535 0v265m126-265v265m-127-130h266" stroke="#8aa8b4" stroke-width="8"/><path d="M539 222q97-17 261 0v43H539Z" fill="#7aadc0"/><path d="m665 80 13-7 14 7m-95 84 10-6 12 6" fill="none" stroke="#5d8fa4" stroke-width="2"/>
 <path d="M0 430q418-45 800 0v130H0Z" fill="#baac88"/><path d="M0 507q388-30 800-7" fill="none" stroke="#a89c7c" stroke-width="2"/>
 <g stroke="#655744" stroke-width="3" stroke-linejoin="round">
 <path d="M114 160h59v264h-59Z" fill="#a16f57"/><path d="M120 166h47v251h-47Z" fill="#b88567" stroke="none"/><path d="M127 197h33m-33 7h33m-33 159h33m-33 7h33" stroke="#e5cfa1" stroke-width="2"/><path d="M137 228v80m13-80v65" stroke="#e4c89a" stroke-width="3"/>
 <path d="M176 190h59v234h-59Z" fill="#cfb47e"/><path d="M183 196h43v223h-43Z" fill="#ddc695" stroke="none"/><rect x="190" y="217" width="30" height="68" rx="15" fill="#a4b3a0" stroke="none"/><path d="M197 321h16m-16 9h16m-23 64h29" stroke="#8b8060" stroke-width="2"/>
-<path d="M238 139h52v285h-52Z" fill="#719489"/><path d="M245 146h37v271h-37Z" fill="#86a99a" stroke="none"/><path d="M249 169h30m-30 11h30m-30 211h30m-15-179v133" stroke="#d6debb" stroke-width="3"/>
+<path d="M238 139h52v285h-52Z" fill="#3a6d86"/><path d="M245 146h37v271h-37Z" fill="#5b92a8" stroke="none"/><path d="M249 169h30m-30 11h30m-30 211h30m-15-179v133" stroke="#d5e4eb" stroke-width="3"/>
 <path d="m299 200 51-13 60 229-51 14Z" fill="#c78e60"/><path d="m312 207 27-7m-18 39 28-7m16 120 28-7" stroke="#efd7ac" stroke-width="3"/>
 <path d="M94 425h333v14H94Z" fill="#876e50"/>
 <path d="M461 339h189q-9 19 0 37H461Z" fill="#eddfb9"/><path d="M455 337h202v9H465v25h191v9H455Z" fill="#b07b60"/><path d="M473 352h165m-160 9h158" stroke="#c8b993" stroke-width="1"/>
-<path d="M432 382h227q-8 17 0 33H432Z" fill="#f0e3c2"/><path d="M427 378h240v9H438v24h229v9H427Z" fill="#6d8c7b"/><path d="M447 394h197m-195 9h185" stroke="#c8b993" stroke-width="1"/>
+<path d="M432 382h227q-8 17 0 33H432Z" fill="#f0e3c2"/><path d="M427 378h240v9H438v24h229v9H427Z" fill="#3a6d86"/><path d="M447 394h197m-195 9h185" stroke="#c8b993" stroke-width="1"/>
 </g>
 <g stroke="#75624c" stroke-width="2.5" stroke-linejoin="round">
 <path d="M277 442q83-62 166-6 83-56 177 5l45 61q-135-27-222 10-88-40-210-4Z" fill="#aa7755"/><path d="M286 418q76-49 157 4 85-55 168-4l34 72q-106-31-202 5-87-38-189-3Z" fill="#f4e8c9"/><path d="M443 422v73" fill="none"/>

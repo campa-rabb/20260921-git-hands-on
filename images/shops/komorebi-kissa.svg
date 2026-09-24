@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="title desc"><title id="title">喫茶こもれびの珈琲とバタートースト</title><desc id="desc">深い緑のカップに入った珈琲と、厚切りのバタートースト。窓から柔らかな光が差しています。</desc><defs><pattern id="paper" width="45" height="45" patternUnits="userSpaceOnUse"><circle cx="8" cy="13" r=".8" fill="#7d6650" opacity=".1"/><circle cx="32" cy="36" r=".7" fill="#7d6650" opacity=".08"/></pattern></defs><rect width="800" height="560" fill="#e6cfaa"/>
-<path d="M530 0h270v304H530Z" fill="#f3e8ca"/><path d="M551 0v289m131-289v289m-152-148h270" stroke="#c3aa7c" stroke-width="8"/><path d="M546 284h254v17H546Z" fill="#c6ac7c"/><path d="M548 40L267 457h246L800 31V0H575Z" fill="#f7efd8" opacity=".46"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="title desc"><title id="title">喫茶こもれびの珈琲とバタートースト</title><desc id="desc">深い緑のカップに入った珈琲と、厚切りのバタートースト。窓から柔らかな光が差しています。</desc><defs><pattern id="paper" width="45" height="45" patternUnits="userSpaceOnUse"><circle cx="8" cy="13" r=".8" fill="#4a5636" opacity=".1"/><circle cx="32" cy="36" r=".7" fill="#4a5636" opacity=".08"/></pattern></defs><rect width="800" height="560" fill="#e5d49a"/>
+<path d="M530 0h270v304H530Z" fill="#f1e8c2"/><path d="M551 0v289m131-289v289m-152-148h270" stroke="#c3aa7c" stroke-width="8"/><path d="M546 284h254v17H546Z" fill="#c6ac7c"/><path d="M548 40L267 457h246L800 31V0H575Z" fill="#f7efd8" opacity=".46"/>
 <path d="M0 423C238 381 585 389 800 422V560H0Z" fill="#c5a379"/><path d="M0 481c258-30 530-25 800 8" fill="none" stroke="#b59066" stroke-width="2"/>
 <ellipse cx="322" cy="447" rx="195" ry="44" fill="#a48461" opacity=".23"/>
 <g stroke="#71533e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
 <ellipse cx="326" cy="427" rx="183" ry="42" fill="#eee0be"/><ellipse cx="326" cy="421" rx="158" ry="29" fill="#f7edcf"/>
-<path d="M396 312q86-16 88 45t-76 59l-5-23q50 1 52-31t-55-26Z" fill="#668573"/><path d="M214 301q4 108 30 123 64 24 134 0 28-36 33-123Z" fill="#62816e"/><path d="M229 310q3 66 14 82" fill="none" stroke="#92a38a" stroke-width="6"/>
+<path d="M396 312q86-16 88 45t-76 59l-5-23q50 1 52-31t-55-26Z" fill="#5a6b42"/><path d="M214 301q4 108 30 123 64 24 134 0 28-36 33-123Z" fill="#4f6038"/><path d="M229 310q3 66 14 82" fill="none" stroke="#9aaa78" stroke-width="6"/>
 <ellipse cx="313" cy="303" rx="99" ry="31" fill="#d5c39c"/><ellipse cx="313" cy="306" rx="86" ry="23" fill="#75513a"/><path d="M255 300q32-19 84-9" fill="none" stroke="#b88a5c" stroke-width="3"/>
 <path d="M282 249c-31-28 31-42 2-72m36 70c-28-30 31-42 8-70m30 75c-23-27 26-41 9-61" fill="none" stroke="#f7efda" stroke-width="5"/>
 </g>
@@ -14,5 +14,5 @@
 <path d="m555 332 39-5 30 16-38 7Z" fill="#f9e4a3"/><path d="m555 332 1 12 30 18v-12m0 12 39-8-1-11" fill="#ecca78"/><path d="M575 369l29-5m-54-18 12 5m64 22 9 4" stroke="#ce9b59" stroke-width="2"/>
 </g>
 <path d="M548 474q64 3 105-2" stroke="#775740" stroke-width="8" stroke-linecap="round"/><ellipse cx="665" cy="471" rx="22" ry="10" fill="#bba98b" stroke="#775740" stroke-width="2"/>
-<g fill="none" stroke="#839070" stroke-width="3"><path d="M123 338v-96m0 49q-48-23-23-44 25 1 23 44m0 21q51-27 29-45-26 3-29 45"/></g><path d="M101 326h44l-7 61h-30Z" fill="#b98261" stroke="#71533e" stroke-width="3"/>
+<g fill="none" stroke="#6d7d4e" stroke-width="3"><path d="M123 338v-96m0 49q-48-23-23-44 25 1 23 44m0 21q51-27 29-45-26 3-29 45"/></g><path d="M101 326h44l-7 61h-30Z" fill="#b98261" stroke="#71533e" stroke-width="3"/>
 <rect width="800" height="560" fill="url(#paper)"/></svg>
